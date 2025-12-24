@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hari Venkat - Portfolio</title>
+    <title>Hari Kumar - Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -127,8 +128,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .hero-content {
@@ -313,7 +321,7 @@
         /* Projects Section */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
         }
 
@@ -359,6 +367,20 @@
             font-size: 0.8rem;
             margin-top: 1rem;
             border: 1px solid var(--accent);
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .project-link:hover {
+            color: var(--accent);
+            text-decoration: underline;
         }
 
         /* Contact Section */
@@ -417,6 +439,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -428,6 +451,7 @@
                 opacity: 0;
                 transform: translateX(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -473,7 +497,8 @@
                 grid-template-columns: 1fr;
             }
 
-            .skills-grid, .projects-grid {
+            .skills-grid,
+            .projects-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -499,6 +524,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -524,7 +550,9 @@
         <div class="hero-content">
             <h1>Kothapalli Hari Venkata Sai Mani Kumar</h1>
             <p class="tagline">Computer Engineering Student | Software Developer | AI Enthusiast</p>
-            <p>Passionate about building innovative solutions through software development, artificial intelligence, and web technologies. Currently pursuing B.Tech at Sri Vasavi Engineering College with a focus on creating practical tools for education and technology.</p>
+            <p>Passionate about building innovative solutions through software development, artificial intelligence, and
+                web technologies. Currently pursuing B.Tech at Sri Vasavi Engineering College with a focus on creating
+                practical tools for education and technology.</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -538,9 +566,14 @@
         <div class="about-content">
             <div class="about-text">
                 <h3>Hello, I'm Hari!</h3>
-                <p>I'm a dedicated computer engineering student with a strong passion for software development, artificial intelligence, and machine learning. My journey in technology began with a diploma in Computer Engineering, and I'm currently pursuing my B.Tech degree.</p>
-                <p>I love working on practical projects that solve real-world problems, especially in the education sector. My expertise spans across multiple programming languages and web technologies, allowing me to bring innovative ideas to life.</p>
-                <p>With a solid foundation in Java, Python, and web development, combined with my interest in AI/ML, I'm constantly exploring new technologies and building tools that make a difference.</p>
+                <p>I'm a dedicated computer engineering student with a strong passion for software development,
+                    artificial intelligence, and machine learning. My journey in technology began with a diploma in
+                    Computer Engineering, and I'm currently pursuing my B.Tech degree.</p>
+                <p>I love working on practical projects that solve real-world problems, especially in the education
+                    sector. My expertise spans across multiple programming languages and web technologies, allowing me
+                    to bring innovative ideas to life.</p>
+                <p>With a solid foundation in Java, Python, and web development, combined with my interest in AI/ML, I'm
+                    constantly exploring new technologies and building tools that make a difference.</p>
             </div>
             <div class="education-cards">
                 <div class="education-card">
@@ -603,24 +636,42 @@
                     <h3>Fit Track</h3>
                 </div>
                 <div class="project-body">
-                    <p>A comprehensive fitness tracking web application that enables users to log their workouts, monitor their progress over time, and visualize their fitness journey through interactive progress charts and analytics.</p>
+                    <p>A comprehensive fitness tracking web application that enables users to log their workouts,
+                        monitor their progress over time, and visualize their fitness journey through interactive
+                        progress charts and analytics.</p>
+                    <a href="https://project-10-5i32.onrender.com/" class="project-link" target="_blank">View
+                        Project</a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-header">
-                    <h3>Freshers Invitation</h3>
+                    <h3>College Management System</h3>
                 </div>
                 <div class="project-body">
-                    <p>A web-based invitation portal designed specifically for college freshers. The system efficiently manages event details, handles RSVP responses, and maintains comprehensive student information for seamless event coordination.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>AI Helper for Education</h3>
-                </div>
-                <div class="project-body">
-                    <p>An innovative AI-powered educational tool currently under development. This platform aims to provide students with intelligent learning support, detailed explanations of complex concepts, and curated study resources to enhance their educational experience.</p>
+                    <p>A comprehensive ERP solution for educational institutions. Features include student information
+                        management, faculty portals, attendance tracking, and automated timetable generation.</p>
                     <span class="status-badge">🚀 In Development</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Learn Ex</h3>
+                </div>
+                <div class="project-body">
+                    <p>An innovative AI-powered educational tool currently under development. This platform aims to
+                        provide students with intelligent learning support, detailed explanations of complex concepts,
+                        and curated study resources to enhance their educational experience.</p>
+                    <a href="http://le4rnex.vercel.app" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Online Mens Ecommerce</h3>
+                </div>
+                <div class="project-body">
+                    <p>A modern e-commerce platform dedicated to men's fashion. Includes features like product catalog,
+                        shopping cart, secure checkout, and user order history.</p>
+                    <a href="http://br4ev.vercel.app" class="project-link" target="_blank">View Project</a>
                 </div>
             </div>
         </div>
@@ -630,7 +681,8 @@
     <section id="contact">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-content">
-            <p style="color: var(--text-dim); margin-bottom: 2rem;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
+            <p style="color: var(--text-dim); margin-bottom: 2rem;">I'm always open to discussing new projects, creative
+                ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
             <div class="contact-info">
                 <a href="mailto:harivenkatcm048@gmail.com" class="contact-item">
                     <div class="contact-icon">📧</div>
@@ -681,7 +733,7 @@
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -747,4 +799,5 @@
         });
     </script>
 </body>
+
 </html>
